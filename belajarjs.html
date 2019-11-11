@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar JS</title>
+</head>
+<body>
+
+	<h1>Ziqi Belajar Javascript</h1>
+
+	<!-- Materi Dasar -->
+	<script type="text/javascript">
+		console.log("Hello Word")
+	</script>
+
+	<!-- Variabel -->
+	<script type="text/javascript">
+		var nama = "Muhtadin Ziqi M"
+		var $ttl = "Lamongan,20 11 1996"
+		var gend3r = "Laki-laki"
+		var _alamat  = "Lamongan"
+		var kode_pos = 62293
+		var Pden_trkh = "S1"
+
+		console.log(nama);
+	</script>
+
+	<!-- Output -->
+	<script type="text/javascript">
+		console.log("Ini oitput program via console log")
+	</script>
+
+	<!-- Tipe data -->
+	<script type="text/javascript">
+		var nama = "Mansur"
+		var umur = 32
+		var sudah_nikah = true
+		var nama_anak = ["Adin", "Udin", "Ahmad"]
+		var perabot = {'mobil' : 'toyota', 'jam':'rolex'}
+		var hutang = null;
+		var rumah;
+
+		console.log(typeof rumah)
+	</script>
+
+	<!-- KOnstanta -->
+	<script type="text/javascript">
+		const PI = 3.34;
+		console.log(PI)
+		PI = 1;
+		console.log(PI)
+	</script>
+
+	<!-- Operator Aritmatika -->
+	<script type="text/javascript">
+		var X = 12
+		var Y = 15
+		var Z = X - Y
+		console.log(Z)
+	</script>
+
+	<!-- Operator Penugasan -->
+	<script type="text/javascript">
+		var X = 12
+		var Y = 13
+		console.log("X awal = "+X);
+		X += Y;
+		console.log("X selanjutnya = "+X);
+	</script>
+
+	<!-- Operator Perbandingan -->
+	<script type="text/javascript">
+		var x = 12
+		var y = 13
+		console.log(x == y)
+	</script>
+
+	<!-- Switch -->
+	<script type="text/javascript">
+		document.write('<img src="')
+		var g = "satu"
+		switch(g)
+		{
+			case 'satu' : 
+			document.write('img/about-img.jpg')
+			break;
+			case 'dua' :
+			document.write('img/img-profile.png')
+			break;
+		}
+		document.write('"/>')
+	</script>
+
+	<!-- Array -->
+	<script type="text/javascript">
+		var sayur = ['bayam', 'kangkung', 'sawi']
+		console.log(sayur[0])
+	</script>
+
+	<!-- Array Berindex -->
+	<script type="text/javascript">
+		var sayuran = ['bayam', 'kangkung', 'sawi']
+		sayuran[0] = 'kol'
+		sayuran[3] = 'brokoli'
+		console.log(sayuran)
+	</script>
+
+	<!-- Array Asosiatif -->
+	<script type="text/javascript">
+		var kegemaran = 
+		{
+			aktifitas: 'berenang',
+			makanan: 'sate',
+			minuman: 'es teh'
+		}
+
+		console.log(kegemaran)
+	</script>
+
+	<!-- Array multidimensi -->
+	<script type="text/javascript">
+		var herbivora = new Array('kambing', 'sapi')
+		var karnivora = new Array('macan', 'singa')
+		var omnivra = new Array('ayam')
+		var binatang = new Array(herbivora, karnivora, omnivra)
+
+		console.log(binatang)
+		herbivora[0] = 'kerbau'
+		console.log(binatang[1])
+	</script>
+
+	<!-- Menghitung jumlah isi array -->
+	<script type="text/javascript">
+		var herbivora = new Array('kambing', 'sapi')
+		var karnivora = new Array('macan', 'singa')
+		var omnivra = new Array('ayam')
+		var binatang = new Array(herbivora, karnivora, omnivra)
+
+		console.log(binatang)
+		console.log(binatang[0].length)
+	</script>
+
+	<br>
+	<!-- Perulangan dengan while -->
+	<script type="text/javascript">
+	
+		var x = 1
+		while(x <= 5)
+		{
+			document.write(x)
+			x++
+		}
+	</script>
+
+	<br>
+	<!-- Peruangan dengan do while -->
+	<script type="text/javascript">
+		var x = 0
+		do
+		{
+			document.write(x)
+			x++
+		}while(x<1)
+	</script>
+
+	<br>
+	<!-- Perulangan dengan For -->
+	<script type="text/javascript">
+		for (var i = 0; i <= 5; i++) {
+			document.write(i);
+		}
+	</script>
+
+	<br>
+	<!-- Perulangan dengan foreach -->
+	<script type="text/javascript">
+		var warna = new Array('merah', 'kuning', 'hijau')
+		warna.forEach(function(value, index){
+			document.write("Index ke - "+index+ " berwarna "+ value +"<br>")
+		})
+
+	</script>
+	<br>
+
+	<!-- foreach bersarang -->
+	<script type="text/javascript">
+		var herbivora = new Array('kambing', 'sapi')
+		var karnivora = new Array('macan', 'singa')
+		var omnivra = new Array('ayam')
+		var binatang = new Array(herbivora, karnivora, omnivra)
+
+		binatang.forEach(function(jenis, index1){
+			jenis.forEach(function(nama, index2){
+				document.write(nama + " index "+ index1 + " " +index2 + " <br>")
+			})
+		})
+	</script>
+</body>
+</html>

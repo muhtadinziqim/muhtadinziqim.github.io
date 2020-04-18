@@ -15,21 +15,33 @@ header {
     top: 0;
     /* width: 100%; */
     padding: 0 200px;
-    height: 50px;
+    height: 100px;
     border-bottom: 1px solid #888888;
     box-shadow: 1px 1px 5px rgb(197, 197, 197);
+    background: rgb(0, 168, 255);
+    background: linear-gradient(180deg, rgba(0, 168, 255, 1) 0%, rgba(228, 255, 252, 1) 100%);
 }
 
 header .logo {
     float: left;
     width: max-content;
-    background: #fff;
+    height: 100%;
+}
+
+header .logo span {
+    position: relative;
+    bottom: -8px;
+    font-size: 32px;
+    margin-left: 2px;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 0 0 2px #028eec;
 }
 
 .logo img {
-    height: 25px;
+    height: 80px;
     position: relative;
-    top: 25px;
+    top: 50px;
     transform: translateY(-50%);
 }
 
@@ -67,8 +79,9 @@ header .header-right {
     padding: 0 10px;
 }
 
-.header-right a {
+.header-right img {
     margin-right: 10px;
+    height: 80px;
 }
 
 .btn-blue {
@@ -115,12 +128,19 @@ aside {
 
 aside h2 {
     text-align: center;
+    /* width: 100%; */
+    margin: 0 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    background: #fff;
 }
 
 aside nav {
     border: 1px solid #c5c5c5;
     border-radius: 10px;
     padding: 10px;
+    background: #0099ff;
 }
 
 nav ul li {
@@ -130,16 +150,15 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #0099ff;
+    color: #fff;
     transition: .2s;
     padding: 5px 0;
     width: 100%;
 }
 
 nav ul li a.active {
-    color: #028eec;
+    color: #eeeeee;
     margin-left: 5px;
-    text-shadow: 0 0 2px #0028eec;
 }
 
 nav ul li a:hover {
@@ -152,6 +171,7 @@ aside .contact {
     margin-top: 10px;
     border-radius: 10px;
     padding: 10px;
+    background: #0099ff;
 }
 
 .contact img {
@@ -165,17 +185,18 @@ aside .contact {
 
 .contact i.fa,
 .contact i.fab {
-    color: #0099ff;
+    color: #fff;
 }
 
 .contact a {
-    color: #000;
+    color: #fff;
 }
 
 .contact h4 {
     margin-bottom: 10px;
     text-align: center;
     display: block;
+    color: #fff;
 }
 
 .contact .detail-contact p.sub-title {
@@ -187,6 +208,7 @@ aside .contact {
 
 .contact p {
     line-height: 30px;
+    color: #fff;
 }
 
 main {
@@ -195,7 +217,18 @@ main {
     width: 65%;
     border: 1px solid #c5c5c5;
     border-radius: 10px;
+    background: #0099ff;
 }
+
+.head-main {
+    margin: 10px;
+    padding: 10px 0;
+    padding-left: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.head-main h2 {}
 
 article {
     padding: 10px;
@@ -233,7 +266,7 @@ article .img-profile {
 }
 
 article .meta-data i {
-    color: #888888;
+    color: #cfcfcf;
     font-size: 12px;
     margin-left: 10px;
 }
@@ -247,6 +280,8 @@ footer {
     border-top: 1px solid #c5c5c5;
     width: 100%;
     height: 50px;
+    background: rgb(0, 168, 255);
+    background: linear-gradient(180deg, rgba(0, 168, 255, 1) 0%, rgba(228, 255, 252, 1) 100%);
 }
 
 footer p {
@@ -259,10 +294,12 @@ footer p {
 
 .menu-toggle {
     display: none;
+    font-size: 40px;
 }
 
 .menu-mobile {
     display: none;
+    background: #0099ff;
 }
 
 @media (max-width: 1061px) {
@@ -275,7 +312,7 @@ footer p {
 }
 
 @media (max-width: 663px) {
-    .header-right a {
+    .header-right img {
         display: none;
     }
     .menu-toggle {
@@ -295,11 +332,11 @@ footer p {
     }
     aside.menu-mobile {
         height: 100vh;
+        background: #0099ff;
         position: absolute;
-        background: #fff;
         width: 100%;
         border-radius: 0px;
-        top: 50px;
+        top: 100px;
         left: -100%;
         display: block;
         z-index: 9933;
@@ -308,14 +345,17 @@ footer p {
     aside.menu-mobile.active {
         height: 100vh;
         position: absolute;
-        background: #fff;
+        background: #0099ff;
         width: 100%;
         border-radius: 0px;
-        top: 50px;
+        top: 100px;
         left: 0;
         display: block;
         z-index: 9933;
         transition: 0.5s;
+    }
+    .menu-mobile li {
+        border-bottom: 1px solid #888888;
     }
     .menu-mobile img {
         width: 50px;

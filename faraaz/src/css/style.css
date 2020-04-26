@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'myFont';
+    src: url("../font/TravelingTypewriter.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'myFont';
+}
+
+header {
+    background: #fff;
+}
+
+header .logo {
+    height: 70px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.logo h1 {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+}
+
+ul {
+    display: flex;
+}
+
+ul li {
+    flex: 1;
+    list-style: none;
+    text-align: center;
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    position: relative;
+}
+
+ul li a:before {
+    content: '';
+    width: 0px;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: .5s;
+}
+
+ul li:hover a:before,
+ul li.active a:before {
+    width: 100%;
+    transition: .5s;
+}
+
+.banner {
+    height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .img-banner {
+    position: relative;
+    top: -50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    overflow: hidden;
+}
+
+.banner .img-banner img {
+    width: 100%;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner h1 {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.banner p {
+    width: 70%;
+    text-align: center;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.head-section {
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.card {
+    padding: 10px 15%;
+    transition: .5s;
+}
+
+.card:hover {
+    transform: translate(0px, -10px);
+    transition: .5s;
+    box-shadow: 0px 10px 5px #bbbbbb;
+}
+
+.card .img-card {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card .img-card img {
+    width: 100%;
+}
+
+.body-card .title {
+    margin: 10px;
+    text-align: center;
+}
+
+.body-card {
+    text-align: center;
+    white-space: normal;
+}
+
+.btn-more {
+    text-decoration: none;
+    padding: 10px 30px;
+    color: #777;
+    border: 1px solid #777;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.btn-more:hover {
+    transition: .5s;
+    box-shadow: -3px 3px 5px #777;
+}
+
+#customer .content {
+    width: 100%;
+    display: flex;
+}
+
+#customer .tombol-kiri {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.tombol-kiri img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+#customer .scroll {
+    padding: 0 3px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 10px;
+    height: 8px;
+}
+
+#customer .content:hover .scroll::-webkit-scrollbar-thumb:horizontal {
+    background-color: rgba(119, 119, 119, 0.5);
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.scroll::-webkit-scrollbar-thumb:horizontal {
+    background-color: rgba(119, 119, 119, 0);
+    border-radius: 4px;
+    transition: .5s;
+}
+
+#customer .tombol-kanan {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.tombol-kanan img {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.card-customer {
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+article.about {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+
+article.about .img {
+    width: 40%;
+    padding: 20px;
+}
+
+article.about .img img {
+    width: 100%;
+}
+
+article.about .konten {
+    width: 60%;
+    padding: 20px;
+}
+
+article.about .konten p {
+    margin: 30px 0;
+}
+
+article.about .konten a img {
+    width: 30px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+article.contact h2 {
+    margin-bottom: 20px;
+}
+
+article.contact p {
+    margin-bottom: 20px;
+}
+
+.form {
+    width: 100%;
+    padding: 20px;
+    display: block;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.form-control .form-input {
+    padding: 5px;
+    border: 1px solid #777;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-top: 20px;
+}
+
+.menu-toggle {
+    color: black;
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    top: -20px;
+}
+
+@media (max-width: 800px) {
+    .menu-toggle {
+        display: block;
+    }
+    nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: #fff;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+        z-index: 100;
+    }
+    ul li {
+        padding: 10px 0;
+        border-bottom: 1px solid #bbbbbb;
+    }
+    nav ul {
+        display: block;
+        text-align: center;
+    }
+    nav.active {
+        left: 0;
+    }
+    .banner {
+        height: calc(100vh - 70px);
+    }
+    .banner .img-banner {
+        top: 0px;
+    }
+}

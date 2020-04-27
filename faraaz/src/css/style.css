@@ -30,10 +30,14 @@ header .logo {
 nav {
     width: 100%;
     height: 50px;
+    border: 2px dashed #000;
 }
 
 ul {
     display: flex;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 ul li {
@@ -49,7 +53,7 @@ ul li a {
     position: relative;
 }
 
-ul li a:before {
+ul li a::before {
     content: '';
     width: 0px;
     height: 3px;
@@ -60,8 +64,8 @@ ul li a:before {
     transition: .5s;
 }
 
-ul li:hover a:before,
-ul li.active a:before {
+ul li:hover a::before,
+ul li.active a::before {
     width: 100%;
     transition: .5s;
 }
@@ -80,7 +84,7 @@ ul li.active a:before {
     width: 300px;
     height: 300px;
     border-radius: 150px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .banner .img-banner img {
@@ -89,6 +93,19 @@ ul li.active a:before {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 150px;
+}
+
+.img-banner::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    border: 2px #000;
+    border-style: dashed;
+    border-radius: 50%;
 }
 
 .banner h1 {
@@ -108,6 +125,7 @@ section {
 .head-section {
     padding: 10px;
     margin: 20px 0;
+    border: 2px dashed #000;
 }
 
 .card {
@@ -129,6 +147,22 @@ section {
 
 .card .img-card img {
     width: 100%;
+    position: relative;
+}
+
+.card .img-card::before {
+    content: '';
+    width: 100%;
+    height: calc(100% - 5px);
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    border: 2px #000;
+    border-style: dashed;
+}
+
+.card p::before {
+    content: ">>";
 }
 
 .body-card .title {
@@ -224,10 +258,31 @@ article.about {
 article.about .img {
     width: 40%;
     padding: 20px;
+    position: relative;
 }
 
 article.about .img img {
     width: 100%;
+}
+
+.img div {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.img div::before {
+    content: '';
+    width: calc(100%);
+    height: 0;
+    padding-bottom: calc(100%);
+    position: absolute;
+    left: -5px;
+    top: 5px;
+    border: 2px #000;
+    border-style: dashed;
+    z-index: -1;
 }
 
 article.about .konten {
@@ -243,6 +298,23 @@ article.about .konten a img {
     width: 30px;
     display: inline-block;
     margin-right: 20px;
+    background-color: #fff;
+}
+
+article.about .konten a {
+    position: relative;
+}
+
+article.about .konten a::before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: -5px;
+    top: -10px;
+    border: 1px #000;
+    border-style: dashed;
+    z-index: -1;
 }
 
 article.contact h2 {
@@ -317,5 +389,20 @@ footer {
     }
     .banner .img-banner {
         top: 0px;
+    }
+    article.about {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    article.about .img {
+        width: 100%;
+        padding: 20px;
+        position: relative;
+    }
+    article.about .konten {
+        width: 100%;
+        padding: 20px;
     }
 }

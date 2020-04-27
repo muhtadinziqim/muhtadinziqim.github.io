@@ -60,3 +60,9 @@ $(document).ready(function() {
         $('nav').toggleClass('active')
     })
 })
+
+var cw = $('.img > div').width();
+$('.img > div').css({ 'height': cw + 'px' });
+
+
+$('.img').css({ 'width': "10px" });

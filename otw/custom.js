@@ -130,3 +130,12 @@
         '.section.top-header-menu').height()) - $('#footer').height());
 
 })(jQuery);
+
+$("#btn-lainnya").click(function () {
+    $('#menu-lainnya').toggleClass('active-dong')
+    console.log("lalal");
+});
+$(".btn-close").click(function () {
+    $('#menu-lainnya').toggleClass('active-dong')
+    console.log("lalal");
+});

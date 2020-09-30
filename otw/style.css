@@ -1049,3 +1049,67 @@ footer#footer .row.copyright {
 footer#footer .row.copyright span {
     font-weight: 600;
 }
+
+
+/* CUSTOM */
+nav {
+    position: fixed;
+    bottom: 0px;
+    z-index: 90;
+}
+
+.nw {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nw a {
+    flex-grow: 1;
+}
+
+.icon {
+    padding: 5px;
+    border-radius: 100%;
+    background-color: #f6f6f6;
+    /* border: 1px solid #e0e0e0; */
+    border: 1px solid #c7c400;
+    text-align: center;
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.icon img {
+    width: 90%;
+}
+
+.cont p {
+    text-align: center;
+    font-size: x-small;
+    text-decoration: none;
+    color: #000;
+    line-height: 12px;
+}
+
+.menu-lainnya {
+    position: fixed;
+    bottom: -100%;
+    background: #f6f6f6;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px 10px 0px 0px;
+    padding: 16px 0px;
+    transition: 0.5s;
+    width: 100vw;
+    z-index: 100;
+}
+
+.active-dong {
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.menu-lainnya .btn-close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}

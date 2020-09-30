@@ -1113,3 +1113,20 @@ nav {
     right: 10px;
     top: 10px;
 }
+
+.promo .item {
+    background-color: #f6f6f6;
+  }
+
+  .copyright{
+    color: black; 
+    font-size: smaller;
+  }
+
+  footer{
+    color: black; font-size: smaller;
+  }
+
+  .mq{
+    color: #fff; font-size: x-small;
+  }

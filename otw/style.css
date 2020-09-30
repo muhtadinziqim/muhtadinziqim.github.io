@@ -1072,8 +1072,8 @@ nav {
     padding: 5px;
     border-radius: 100%;
     background-color: #f6f6f6;
-    /* border: 1px solid #e0e0e0; */
-    border: 1px solid #c7c400;
+    border: 1px solid #e0e0e0;
+    /* border: 1px solid #c7c400; */
     text-align: center;
     -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);

@@ -2,14 +2,14 @@
 (function ($) {
 
     /*=================== CAROUSEL SLIDER  ===================*/
-    // $('.carousel.carousel-slider').carousel({
-    //     fullWidth: true
-    // }, setTimeout(autoplay, 4500));
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true
+    }, setTimeout(autoplay, 4500));
 
-    // function autoplay() {
-    //     $('.carousel').carousel('next');
-    //     setTimeout(autoplay, 4500);
-    // }
+    function autoplay() {
+        $('.carousel').carousel('next');
+        setTimeout(autoplay, 4500);
+    }
 
     /*=================== GALLERY FILTERING FUCTION  ===================*/
     $(".filter-button").on("click", function () {

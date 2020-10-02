@@ -1132,3 +1132,7 @@ nav {
     color: #ff0;
     font-size: x-small;
 }
+
+.main-slider {
+    height: 5000px;
+}

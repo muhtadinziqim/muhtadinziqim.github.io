@@ -1,24 +1,6 @@
 
 (function ($) {
 
-    // "use strict"; 
-
-    /*=================== PRELOADER ===================*/
-    $(window).on('load', function () {
-        $(".preloading").fadeOut("slow");
-    });
-
-    /*=================== SIDENAV  ===================*/
-    // $('.button-collapse').sideNav({
-    //     menuWidth: 250, 
-    //     edge: 'left',
-    //     closeOnClick: true, 
-    //     draggable: true, 
-    //     onOpen: function(el) {}, 
-    //     onClose: function(el) {}, 
-    //   }
-    // );
-
     /*=================== CAROUSEL SLIDER  ===================*/
     $('.carousel.carousel-slider').carousel({
         fullWidth: true

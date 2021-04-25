@@ -1,0 +1,47 @@
+.form-container .form-group {
+  margin-top: -25px;
+}
+
+.form-container label {
+  color: #222327;
+}
+
+.form-container .form-control {
+  border: 1px solid #333333;
+  padding: 10px;
+}
+
+.form-container .form-control:focus {
+  border: 1px solid #333333;
+
+}
+
+.clients {
+  background-image: url(https://studioantelope.com/wp-content/uploads/2019/07/sai-page-background.jpg?id=8087) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+.btn-s {
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+}
+
+/* .form-container .btn-2 {
+  color: #222327;
+  font-size: 16px;
+  background-color: #fff;
+  border: 1px solid #222327;
+  padding: 0px 20px;
+} */
+
+.vlt-isotope-filters{
+  color: #fff;
+}
+
+.vlt-isotope-filters li.active, .vlt-isotope-filters li:hover {
+  color: #e82e31;
+}

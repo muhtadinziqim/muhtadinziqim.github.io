@@ -637,6 +637,10 @@ textarea {
   color: #75dab4;
   text-decoration: none;
 }
+.site-navigation .inner ul li a.active {
+  color: #e82e31;
+  text-decoration: none;
+}
 .site-navigation.active {
   opacity: 1;
   visibility: visible;

@@ -50,3 +50,24 @@
   margin: 0px 0px;
   padding: 0px 0px;
 }
+
+.concon {
+  margin-top: 20px;
+}
+
+.concon strong, .concon span{
+  color: #d4d3d3;
+}
+
+
+.card-saya{
+  padding: 55px;
+  background-color: #fff;
+}
+
+.line-title {
+  height: 3px;
+  width: 70px;
+  background: #e82e31;
+  display: table;
+}

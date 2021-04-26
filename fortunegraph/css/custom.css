@@ -45,3 +45,8 @@
 .vlt-isotope-filters li.active, .vlt-isotope-filters li:hover {
   color: #e82e31;
 }
+
+.site-navigation .inner ul li small{
+  margin: 0px 0px;
+  padding: 0px 0px;
+}

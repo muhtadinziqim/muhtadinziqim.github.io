@@ -47,8 +47,12 @@
   <!-- Archiko -->
   <link href="archiko_asset/css/style.css" rel="stylesheet" media="screen">
 
+  <!-- TElp -->
+
+
   <link rel="stylesheet" href="css/custom.css">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
   <style>
     .site-navigation .inner ul li small {
       margin: -10px 0px;
@@ -60,16 +64,10 @@
 <body>
   <div class="preloader">
     <div class="layer"></div>
-    <!-- end layer -->
     <div class="inner">
-
-
-
-
       <figure> <img src="images/preloader.gif" alt="Image"> </figure>
       <span>Site Loading</span>
     </div>
-    <!-- end inner -->
   </div>
   <!-- end preloader -->
   <div class="page-transition">
@@ -83,7 +81,7 @@
     <div class="inner">
       <div class="row" style="display: flex; align-items: center; margin-top: 0px;">
         <ul data-splitting class="col-md-7">
-          <li><a href="index.html" class="active">HOME</a><i class="fas fa-caret-down"></i> <small>First page</small>
+          <li><a href="index.html">HOME</a><i class="fas fa-caret-down"></i> <small>First page</small>
             <ul>
               <li><a href="index.html">HOME SLIDER</a></li>
               <li><a href="index-video.html">HOME VIDEO</a></li>
@@ -422,7 +420,7 @@
         </div>
       </div>
       <div
-        style="display: flex; justify-content: center; background-color: #222327; margin-top: 20px; margin-bottom: 20px;">
+        style="display: flex; justify-content: center; background-color: #222327; margin-top: 40px; margin-bottom: 40px;">
         <a href="#" class="btn-s btn-4">View All</a>
       </div>
     </section>
@@ -431,7 +429,7 @@
     <section class="clients">
       <div class="">
         <div class="row">
-          <div class="col-lg-6 wow" data-splitting>
+          <div class="col-lg-6 wow wow-saya" data-splitting>
             <h5 class="section-title" style="color: #222327; margin-top: 20px; margin-bottom: 35px;">CREATE YOUR BRANDED
               VIDEO</h5>
             <div class="form-container">
@@ -449,12 +447,14 @@
                   <input type="email" class="form-control" id="email" style="color: #222327;" placeholder="" />
                 </div>
                 <div class="form-group">
-                  <label for="phone">Phone</label>
-                  <input type="text" class="form-control" id="phone" style="color: #222327;" placeholder="" />
+                  <label for="phone" style="width: 100%;">Phone</label>
+                  <input class="form-control" id="phone" type="tel" name="phone" style="border: 1px solid #acacac;" />
+                  <div class="alert alert-info" style="display: none;"></div>
                 </div>
                 <div class="form-group">
                   <label for="tell">Tell Us About Your Project</label>
-                  <textarea name="" id="tell" class="form-control" rows="4" placeholder=""></textarea>
+                  <textarea name="" style="background: none;" id="tell" class="form-control" rows="4"
+                    placeholder=""></textarea>
                 </div>
                 <div>
                   <button type="submit" class="btn-2">LET'S DISCUSS</button>
@@ -512,6 +512,11 @@
   </footer>
   <!-- end footer -->
 
+
+  <!-- <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+    integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script> -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <!-- JS FILES -->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
@@ -550,7 +555,48 @@
   <script src="archiko_asset/js/interface.js"></script>
 
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
   <script src="js/scripts.js"></script>
+
+  <script>
+    // init plugin
+    const phoneInputField = document.querySelector("#phone");
+    const phoneInput = window.intlTelInput(phoneInputField, {
+      initialCountry: 'id',
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    });
+
+    // const info = document.querySelector(".alert-info");
+
+    // function process(event) {
+    //   event.preventDefault();
+
+    //   const phoneNumber = phoneInput.getNumber();
+
+    //   info.style.display = "";
+    //   info.innerHTML = `Phone number in E.164 format: <strong>${phoneNumber}</strong>`;
+    // }
+
+    // var input = document.querySelector("#phone");
+    // window.intlTelInput(input, {
+    //   initialCountry: "auto",
+    //   geoIpLookup: function (callback) {
+    //     $.get('https://ipinfo.io', function () {}, "jsonp").always(function (resp) {
+    //       var countryCode = (resp && resp.country) ? resp.country : "us";
+    //       callback(countryCode);
+    //     });
+    //   },
+    //   utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    // });
+  </script>
+  <style>
+    .iti-mobile .iti--container {
+      width: 400px;
+      margin-left: 50px;
+    }
+  </style>
+
 </body>
 
 </html>

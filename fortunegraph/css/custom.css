@@ -7,7 +7,7 @@
 }
 
 .form-container .form-control {
-  border: 1px solid #333333;
+  border: 1px solid #acacac;
   padding: 10px;
 }
 
@@ -23,11 +23,20 @@
   background-size: cover !important;
 }
 
+.wow-saya {
+  padding: 0px 100px;
+}
+
 .btn-s {
-  color: #fff;
+  color: #000;
+  background-color: #fff;
   font-size: 16px;
   border: 1px solid #fff;
   padding: 5px 10px;
+}
+
+.btn-s:hover {
+  color: #222327;
 }
 
 /* .form-container .btn-2 {
@@ -38,15 +47,16 @@
   padding: 0px 20px;
 } */
 
-.vlt-isotope-filters{
+.vlt-isotope-filters {
   color: #fff;
 }
 
-.vlt-isotope-filters li.active, .vlt-isotope-filters li:hover {
-  color: #e82e31;
+.vlt-isotope-filters li.active,
+.vlt-isotope-filters li:hover {
+  color: #75dab4;
 }
 
-.site-navigation .inner ul li small{
+.site-navigation .inner ul li small {
   margin: 0px 0px;
   padding: 0px 0px;
 }
@@ -55,12 +65,13 @@
   margin-top: 20px;
 }
 
-.concon strong, .concon span{
+.concon strong,
+.concon span {
   color: #d4d3d3;
 }
 
 
-.card-saya{
+.card-saya {
   padding: 55px;
   background-color: #fff;
 }
@@ -68,6 +79,13 @@
 .line-title {
   height: 3px;
   width: 70px;
-  background: #e82e31;
+  background: #75dab4;
   display: table;
+}
+
+
+
+
+vlt-work--style-3:hover{
+  background-color: #75dab4;
 }

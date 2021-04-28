@@ -2215,7 +2215,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   /* padding: 150px 0; */
-  padding-left: 40px;
+  padding-left: 30px;
   background: #fff;
   box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.3);
 }
@@ -2363,6 +2363,7 @@ textarea {
   padding-top: 100px;
   color: #fff;
   background: url(../images/footer-bg.png) top center no-repeat;
+  background-color: #000;
   background-size: 80% auto;
 }
 .footer ul {

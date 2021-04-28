@@ -158,7 +158,7 @@ body .vc_tta-tabs.vc_tta.vc_tta-color-grey.vc_tta-style-outline .vc_tta-tab.vc_a
 body .vc_tta-tabs.vc_tta.vc_tta-color-grey.vc_tta-style-outline .vc_tta-tab > a:hover,
 header div:not(.mainmenu-belowheader) > .navbar .nav > li.mgt-highlight-bordered > a:hover,
 header div:not(.mainmenu-belowheader) > .navbar .nav > li.mgt-highlight > a {
-    background-color: #ffbf3b;
+    background-color: #fff;
 }
 a,
 a:focus,
@@ -237,7 +237,7 @@ header.left-side-header .social-icons-wrapper a:hover,
 .header-left-menu-wrapper ul.header-left-menu li a:hover,
 .header-left-menu-wrapper ul.header-left-menu li.current_page_item a,
 header.mainmenu-position-menu_inside_header .shopping-cart a:hover span {
-    color: #ffbf3b;
+    color: #fff;
 }
 blockquote,
 .sidebar .widget_calendar tbody td a,
@@ -266,16 +266,16 @@ textarea:focus,
 input:focus,
 header div:not(.mainmenu-belowheader) > .navbar .nav > li.mgt-highlight-bordered > a,
 header div:not(.mainmenu-belowheader) > .navbar .nav > li.mgt-highlight > a:hover {
-    border-color: #ffbf3b;
+    border-color: #fff;
 }
 .navbar.menu-style-border-top .nav > li .sub-menu {
-    border-top-color: #ffbf3b;
+    border-top-color: #fff;
 }
 .navbar.menu-style-border-bottom .nav > li .sub-menu {
-    border-bottom-color: #ffbf3b;
+    border-bottom-color: #fff;
 }
 .navbar.menu-style-border-left .nav > li .sub-menu {
-    border-left-color: #ffbf3b;
+    border-left-color: #fff;
 }
 header.main-header {
     background-color: #ffffff;
@@ -314,8 +314,8 @@ footer.footer-style-light {
     background-color: #f4f4f4;
 }
 #nprogress .bar {
-    background: #ffbf3b;
+    background: #fff;
 }
 #nprogress .peg {
-    box-shadow: 0 0 10px #ffbf3b, 0 0 5px #ffbf3b;
+    box-shadow: 0 0 10px #fff, 0 0 5px #fff;
 } /*2020-06-17 14:02*/ /* CSS Generator Execution Time: 0.00026988983154297 seconds */

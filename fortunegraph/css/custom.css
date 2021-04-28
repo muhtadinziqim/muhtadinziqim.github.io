@@ -86,25 +86,40 @@
 
 
 .act-btn{
-  background:green;
+  background:#d4d3d3;
   display: block;
-  line-height: 50px;
   text-align: center;
-  color: white;
+  color: #000;
   font-size: 18px;
   font-weight: bold;
-  padding: 0 10px;
+  padding: 2px 20px;
+  border: 1px solid #75dab4;
   border-radius: 50px;
   -webkit-border-radius: 50px;
   text-decoration: none;
   transition: ease all 0.3s;
   position: fixed;
   right: 10px;
-  bottom:10px;
+  bottom:20px;
   z-index: 1000;
 }
 
 .act-btn:hover{
-  background-color: #004b00;
+  background-color: #75dab4;
+  color: #000;
   text-decoration: none;
+}
+
+.sty-saya p{
+  color: #999999;
+}
+
+.lala-saya ul li a i{
+  color: #fff;
+}
+
+
+.btn-saya-yes{
+  background-color: #000;
+  color: #fff;
 }

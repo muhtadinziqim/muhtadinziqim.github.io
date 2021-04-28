@@ -85,7 +85,26 @@
 
 
 
+.act-btn{
+  background:green;
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0 10px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  text-decoration: none;
+  transition: ease all 0.3s;
+  position: fixed;
+  right: 10px;
+  bottom:10px;
+  z-index: 1000;
+}
 
-vlt-work--style-3:hover{
-  background-color: #75dab4;
+.act-btn:hover{
+  background-color: #004b00;
+  text-decoration: none;
 }

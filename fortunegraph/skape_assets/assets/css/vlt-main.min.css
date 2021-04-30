@@ -5064,7 +5064,7 @@ dl dd {
 
 .vlt-work--style-3 .vlt-work__meta,
 .vlt-work--style-6 .vlt-work__meta {
-    background-color: rgba(66, 247, 135, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     -webkit-backdrop-filter: unset;
     backdrop-filter: unset
 }

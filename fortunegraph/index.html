@@ -48,11 +48,11 @@
   <link href="archiko_asset/css/style.css" rel="stylesheet" media="screen">
 
   <!-- TElp -->
-
+  <link rel="stylesheet" href="telinput/css/intlTelInput.css">
+  <!-- <link rel="stylesheet" href="telinput/css/demo.css"> -->
 
   <link rel="stylesheet" href="css/custom.css">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
   <style>
     .site-navigation .inner ul li small {
       margin: -10px 0px;
@@ -410,7 +410,8 @@
       <div class="">
         <div class="row">
           <div class="col-lg-6 wow wow-saya" data-splitting>
-            <h5 class="section-title" style="color: #222327; margin-top: 20px; margin-bottom: 35px; margin-left: -15px;">CREATE YOUR BRANDED
+            <h5 class="section-title"
+              style="color: #222327; margin-top: 20px; margin-bottom: 35px; margin-left: -15px;">CREATE YOUR BRANDED
               VIDEO</h5>
             <div class="form-container">
               <form class="form-horizontal">
@@ -430,6 +431,7 @@
                   <label for="phone" style="width: 100%;">Phone</label>
                   <input class="form-control" id="phone" type="tel" name="phone" style="border: 1px solid #acacac;" />
                   <div class="alert alert-info" style="display: none;"></div>
+                  <input type="tel" id="demo" placeholder="">
                 </div>
                 <div class="form-group">
                   <label for="tell">Tell Us About Your Project</label>
@@ -540,9 +542,19 @@
   <script src="archiko_asset/js/interface.js"></script>
 
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> -->
 
   <script src="js/scripts.js"></script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="telinput/js/intlTelInput.js"></script>
+  <script>
+    $("#phone").intlTelInput({
+      utilsScript: "telinput/js/utils.js"
+    });
+  </script>
+
 
   <script>
     // init plugin

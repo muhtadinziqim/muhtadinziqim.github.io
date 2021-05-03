@@ -478,20 +478,28 @@
     <script src="js/scripts.js"></script>
 
     <!-- Skape -->
-    <script src="skape_assets/assets/vendors/jquery-3.5.1.min.js"></script>
+    <!-- <script src="skape_assets/assets/vendors/jquery-3.5.1.min.js"></script> -->
     <script src="skape_assets/assets/scripts/vlt-plugins.min.js"></script>
     <script src="skape_assets/assets/scripts/vlt-helpers.js"></script>
     <script src="skape_assets/assets/scripts/vlt-controllers.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
 
+    <link rel="stylesheet" href="css/intlTelInput.css">
+    <script type="text/javascript" src="js/intlTelInput.js"></script>
+    <script>
+        $('#phone').intlTelInput({
+            container: 'body',
+            utilsScript: "https://rawgit.com/Bluefieldscom/intl-tel-input/master/lib/libphonenumber/build/utils.js"
+        });
+    </script>
     <script>
         // init plugin
-        const phoneInputField = document.querySelector("#phone");
-        const phoneInput = window.intlTelInput(phoneInputField, {
-            initialCountry: 'id',
-            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-        });
+        // const phoneInputField = document.querySelector("#phone");
+        // const phoneInput = window.intlTelInput(phoneInputField, {
+        //     initialCountry: 'id',
+        //     utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        // });
 
         // const info = document.querySelector(".alert-info");
 

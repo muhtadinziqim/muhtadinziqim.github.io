@@ -10,18 +10,18 @@
 
 .item {
     position: relative;
-    background: #ccc;
+    /* background: #ccc; */
     display: flex;
 }
 
 /* Number */
-.item:before {
+/* .item:before {
     counter-increment: albumList;
     content: counter(albumList);
     margin: auto;
     font-size: 40px;
     color: #000000;
-}
+} */
 
 /* Square */
 .item:after {

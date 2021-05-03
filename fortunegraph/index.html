@@ -47,9 +47,6 @@
   <!-- Archiko -->
   <link href="archiko_asset/css/style.css" rel="stylesheet" media="screen">
 
-  <!-- TElp -->
-  <link rel="stylesheet" href="telinput/css/intlTelInput.css">
-  <!-- <link rel="stylesheet" href="telinput/css/demo.css"> -->
 
   <link rel="stylesheet" href="css/custom.css">
 
@@ -431,11 +428,10 @@
                   <label for="phone" style="width: 100%;">Phone</label>
                   <input class="form-control" id="phone" type="tel" name="phone" style="border: 1px solid #acacac;" />
                   <div class="alert alert-info" style="display: none;"></div>
-                  <input type="tel" id="demo" placeholder="">
                 </div>
                 <div class="form-group">
-                  <label for="tell">Tell Us About Your Project</label>
-                  <textarea name="" style="background: none;" id="tell" class="form-control" rows="4"
+                  <label for="tes" style="visibility: visible;">Tell Us About Your Project</label>
+                  <textarea name="" style="background: none;" id="tes" class="form-control" rows="4"
                     placeholder=""></textarea>
                 </div>
                 <div>
@@ -541,28 +537,26 @@
   <script src="archiko_asset/js/rev-slider-init.js"></script>
   <script src="archiko_asset/js/interface.js"></script>
 
-
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> -->
-
   <script src="js/scripts.js"></script>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="telinput/js/intlTelInput.js"></script>
+  <link rel="stylesheet" href="css/intlTelInput.css">
+  <script type="text/javascript" src="js/intlTelInput.js"></script>
   <script>
-    $("#phone").intlTelInput({
-      utilsScript: "telinput/js/utils.js"
+    $('#phone').intlTelInput({
+      container: 'body',
+      utilsScript: "https://rawgit.com/Bluefieldscom/intl-tel-input/master/lib/libphonenumber/build/utils.js"
     });
   </script>
 
 
   <script>
     // init plugin
-    const phoneInputField = document.querySelector("#phone");
-    const phoneInput = window.intlTelInput(phoneInputField, {
-      initialCountry: 'id',
-      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    });
+    // const phoneInputField = document.querySelector("#phone");
+    // const phoneInput = window.intlTelInput(phoneInputField, {
+    //   initialCountry: 'id',
+    //   utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    // });
 
     // const info = document.querySelector(".alert-info");
 

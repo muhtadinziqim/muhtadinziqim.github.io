@@ -5014,7 +5014,8 @@ dl dd {
 .vlt-work--style-6 .vlt-work__category,
 .vlt-work--style-6 .vlt-work__title {
     opacity: 0;
-    color: inherit
+    color: inherit;
+    text-align: center;
 }
 
 .vlt-work--style-2 .vlt-work__category a:hover,

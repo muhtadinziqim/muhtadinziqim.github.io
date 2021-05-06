@@ -11,6 +11,22 @@
   padding: 10px;
 }
 
+
+.form-container select,
+.form-container textarea{
+  border: 1px solid #acacac;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0);
+  height: auto;
+  border-radius: 0px;
+}
+
+button[type=submit]{
+  background: #fff;
+  color: #222327;
+}
+
+
 .form-container .form-control:focus {
   border: 1px solid #333333;
 
@@ -77,6 +93,56 @@
   padding: 55px;
   background-color: #fff;
 }
+
+.card-saya2 {
+  background-color: #222327;
+}
+
+.card-saya2 .content-saya {
+  padding: 32px;
+}
+
+.card-saya2 h2{
+  color: #75dab4;
+  font-size: 50px;
+}
+
+.card-saya2 .desc{
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+
+.card-saya2 .title-saya{
+  color: #75dab4;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.content-saya .form-group{
+  margin-left: 0px;
+}
+
+.content-saya label{
+  color: #fff;
+  font-weight: 400;
+  width: 100%;
+}
+
+.content-saya .form-control{
+  width: 90%;
+  color: #fff;
+}
+
+.content-saya .form-control:focus{
+  width: 90%;
+  background: rgba(0, 0, 0, 0);
+}
+
+.garis-saya{
+  height: 1px;
+  background-color: #75dab4;
+}
+
 
 .line-title {
   height: 3px;

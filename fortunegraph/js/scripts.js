@@ -5,8 +5,12 @@
 		
 		// ICON CONTENT BLOCK
 			$('.icon-content-block .content-block').mouseenter(function() {
-				$('.selected').removeClass('selected').addClass('icon-content-block .content-block');
+				// $('.selected').removeClass('selected').addClass('icon-content-block .content-block');
 				$(this).removeClass('icon-content-block .content-block').addClass('selected');
+			});
+			$('.selected').mouseout(function() {
+				$(this).removeClass('selected').addClass('icon-content-block .content-block');
+				// $(this).removeClass('icon-content-block .content-block').addClass('selected');
 			});
 		
 		

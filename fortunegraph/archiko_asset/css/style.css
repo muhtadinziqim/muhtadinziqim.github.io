@@ -1389,7 +1389,7 @@ i.icon{
   /* left: 0; */
   width: 100%;
   /* top: 40%; */
-  padding:0 2em;
+  /* padding:0 2em; */
   font-size: 1.375em;
   letter-spacing: 0;
   text-transform: none;
@@ -1403,11 +1403,13 @@ i.icon{
   text-align: center;
   width:100%;
   /* bottom:35%; */
-  padding:0 2em;
+  /* padding:0 2em; */
   text-transform: uppercase;
   letter-spacing: 0.7em;
   font-size: 1.5em;
   margin-top: -10px;
+  margin-left: 10px;
+  line-height: 1.5em;
 }
 
 .showcase-item-hover.hover-blue .ion-ios-plus-empty,

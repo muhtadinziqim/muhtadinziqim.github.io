@@ -72,22 +72,25 @@
     <!-- end layer -->
   </div>
   <!-- end page-transition -->
+
   <nav class="site-navigation">
     <div class="layer"></div>
     <!-- end layer -->
     <div class="inner">
       <div class="row" style="display: flex; align-items: center; margin-top: 0px;">
         <ul data-splitting class="col-md-7">
-          <li><a href="index.html">HOME</a><i class="fas fa-caret-down"></i> <small>First page</small>
-            <ul style="display: block;">
-              <li><a href="index.html">HOME SLIDER</a></li>
-              <li><a href="index-video.html">HOME VIDEO</a></li>
-              <li><a href="index-carousel.html">HOME CAROUSEL</a></li>
+          <li><i style="font-style: normal; margin-left: auto; margin-bottom: 14px;"><a href="#" class="drop-saya">SERVICE</a></i><i class="fas fa-caret-down"></i> <small>Our All Service</small>
+            <ul class="dropdown-saya" style="display: block;">
+              <li><a href="branding.html">DESIGN BRANDING</a></li>
+              <li><a href="index-video.html">BRANDED VIDEO</a></li>
+              <li><a href="index-carousel.html">MUSIC PRODUCTION</a></li>
+              <li><a href="index-carousel.html">BRANDED PHOTO</a></li>
             </ul>
           </li>
           <li><a href="work.html">WORK</a> <small>Our all projects</small> </li>
-          <li><a href="contact.html">CONTACT</a> <small>Say hello</small> </li>
-          <li><a href="faq.html">FAQ</a> <small>Ask To Me</small> </li>
+          <li><a href="about.html">ABOUT</a> <small>All About Us</small> </li>
+          <li><a href="community.html">COMMUNITY</a> <small>Recent Post</small> </li>
+          <li><a href="contact.html">CONTACT</a> <small>Say Hello</small> </li>
         </ul>
         <div class="col-md-5">
           <div class="concon">
@@ -286,7 +289,7 @@
           </div>
           <!-- end col-3 -->
           <div class="col-lg-3 col-md-4 wow" data-splitting>
-            <div class="content-block selected">
+            <div class="content-block">
               <figure> <a href="Service/BRANDED VIDEO.html"><img src="images/icon02.png" alt="Image"></a></figure>
               <h6>BRANDED VIDEO </h6>
               <ul>
@@ -301,8 +304,8 @@
             <!-- end content-block -->
           </div>
           <!-- end col-3 -->
-          <div class="col-lg-3 col-md-4 wow" data-splitting>
-            <div class="content-block selected">
+          <div class="col-lg-3 col-md-4 wow" style="margin-bottom: 50px;" data-splitting>
+            <div class="content-block">
               <figure> <a href="Service/MUSIC PRODUCTION.html"><img src="images/icon03.png" alt="Image"></a></figure>
               <h6>MUSIC PRODUCTION </h6>
               <ul>
@@ -361,8 +364,8 @@
               <div class="showcase-item-thumbnail"><img alt="" src="images/portfolio/3-637x480.jpg"></div>
               <figcaption class="showcase-item-hover hover-dark">
                 <div class="showcase-item-info">
-                  <div class="showcase-item-category">Stationery Design</div>
-                  <div class="showcase-item-title">Branding</div>
+                  <div class="showcase-item-category">CORPORATE PROFILE VIDEO</div>
+                  <div class="showcase-item-title">VIDEO branded</div>
                 </div>
               </figcaption>
             </figure>
@@ -374,8 +377,8 @@
               <div class="showcase-item-thumbnail"><img alt="" src="images/portfolio/4-637x480.jpg"></div>
               <figcaption class="showcase-item-hover hover-dark">
                 <div class="showcase-item-info">
-                  <div class="showcase-item-category">Stationery Design</div>
-                  <div class="showcase-item-title">Branding</div>
+                  <div class="showcase-item-category">Recording</div>
+                  <div class="showcase-item-title">Music Production</div>
                 </div>
               </figcaption>
             </figure>
@@ -550,6 +553,12 @@
   </script>
 
 
+  <script>
+    $('.drop-saya').on("click",function(){
+      console.log("Tesss");
+      $('.dropdow-saya').css('display', 'none');
+    })
+  </script>
   <script>
     // init plugin
     // const phoneInputField = document.querySelector("#phone");

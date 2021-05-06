@@ -1209,6 +1209,10 @@ only screen and (min-resolution: 2dppx) {
     .iti-flag {
         background-image: url("../telinput/img/flags@2x.png")
     }
+    .iti-flag.id {
+        height: 14px;
+        background-position: -2315px 0px
+    }
 }
 .iti-flag.np {
     background-color: transparent

@@ -587,7 +587,7 @@ textarea {
 }
 .site-navigation .inner ul li {
   display: block;
-  margin: 5px 0;
+  margin: -10px 0;
   padding: 5px 0;
 }
 .site-navigation .inner ul li ul {
@@ -597,7 +597,8 @@ textarea {
 }
 .site-navigation .inner ul li ul li {
   display: block;
-  margin: 0;
+  margin: -10px 0;
+  padding: 0;
 }
 .site-navigation .inner ul li ul li a {
   font-size: 26px;
@@ -1495,11 +1496,11 @@ textarea {
   -o-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
 }
-.icon-content-block .content-block.selected {
+.icon-content-block .content-block:hover {
   background: #161619;
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
 }
-.icon-content-block .content-block.selected:before {
+.icon-content-block .content-block:hover:before {
   content: "";
   width: 50%;
   height: 50%;

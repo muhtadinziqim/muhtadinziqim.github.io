@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.2/dist/css/uikit.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
 </head>
 
@@ -255,9 +257,18 @@
         <!-- ***** APK Pelanggan Area End ***** -->
 
         <!-- ***** Aplikasi Resto Start ***** -->
+        <style>
+            @media (max-width: 575px) {
+                .pukpiw {
+
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
+        </style>
         <section class="section discover-area overflow-hidden ptb_100">
             <div class="container">
-                <div class="row justify-content-between">
+                <div class="row justify-content-between pukpiw">
                     <div class="col-12 col-lg-6 order-2 order-lg-1">
                         <!-- Discover Text -->
                         <div class="discover-text pt-4 pt-lg-0">
@@ -288,7 +299,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-6 order-1 order-lg-2 d-none d-lg-block">
+                    <div class="col-12 col-lg-6 order-1 order-lg-2 d-lg-block">
                         <!-- Discover Thumb -->
                         <div class="service-thumb discover-thumb mx-auto pt-5 pt-lg-0">
                             <img src="img/resto-fig.png" style="max-height: 500px; float: right;" alt="">
@@ -432,7 +443,7 @@
                     </div>
                 </div>
 
-                
+
             </div>
         </section>
 
@@ -660,7 +671,8 @@
                                 <li class="py-2">
                                     <a class="media" href="https://wa.me/6285157866563">
                                         <div class="social-icon mr-3">
-                                            <i class="fas fa-phone-alt"></i>
+                                            <!-- <i class="fas fa-whatsapp"></i> -->
+                                            <i class="fab fa-whatsapp"></i>
                                         </div>
                                         <span class="media-body align-self-center">6285157866563</span>
                                     </a>
@@ -744,24 +756,26 @@
                                     <img class="logo" src="img/logo-4.png" alt="">
                                 </a>
                                 <p class="mt-2 mb-3">Jl. Sukun Jl. Mataram Bumi Sejahtera No.3 Ngringin, Condongcatur,
-                                    Kec. Depok Kab. Sleman. <br> Daerah Istimewa Yogyakarta (55281)</p>
+                                    Kec. Depok Kab. Sleman. <br> D.I. Yogyakarta (55281)</p>
                                 <!-- Social Icons -->
                                 <div class="social-icons d-flex">
                                     <a class="facebook" href="#">
                                         <i class="fab fa-facebook-f"></i>
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
-                                    <a class="twitter" href="#">
-                                        <i class="fab fa-twitter"></i>
-                                        <i class="fab fa-twitter"></i>
+                                    <a class="twitter" style="background-color: #DD2A7D !important;" href="#">
+                                        <i class="fab fa-instagram"></i>
+                                        <i class="fab fa-instagram"></i>
                                     </a>
                                     <a class="google-plus" href="#">
-                                        <i class="fab fa-google-plus-g"></i>
-                                        <i class="fab fa-google-plus-g"></i>
+                                        <i class="fab fa-youtube"></i>
+                                        <i class="fab fa-youtube"></i>
                                     </a>
-                                    <a class="vine" href="#">
-                                        <i class="fab fa-vine"></i>
-                                        <i class="fab fa-vine"></i>
+                                    <a class="vine" style="background-color: #000 !important; display: flex; justify-content: center; align-items: center;" href="#">
+                                        <img style="width: 50%;" src="https://image.flaticon.com/icons/png/512/3046/3046124.png" alt="">
+                                        <!-- <img src="https://image.flaticon.com/icons/png/512/3046/3046124.png" alt=""> -->
+                                        <!-- <i class="fab fa-tiktok"></i> -->
+                                        <!-- <i class="fab fa-tiktok"></i> -->
                                     </a>
                                 </div>
                             </div>
@@ -800,15 +814,23 @@
                                 <!-- Footer Title -->
                                 <h3 class="footer-title mb-2">Download</h3>
                                 <!-- Store Buttons -->
-                                <div class="button-group store-buttons store-black d-flex flex-wrap">
-                                    App Pelanggan :
-                                    <a href="#">
-                                        <img src="assets/img/icon/google-play-black.png" alt="">
-                                    </a>
-                                    App Resto :
-                                    <a href="#">
-                                        <img src="assets/img/icon/google-play-black.png" alt="">
-                                    </a>
+                                <div class="button-group store-buttons store-black d-flex flex-wrap" style="display: flex; flex-direction: column;">
+                                    <div style="display: flex; flex-direction: column;">
+                                        <span>
+                                            App Pelanggan :
+                                        </span>
+                                        <a href="#">
+                                            <img src="assets/img/icon/google-play-black.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div style="display: flex; flex-direction: column;">
+                                        <span>
+                                            App Resto :
+                                        </span>
+                                        <a href="#">
+                                            <img src="assets/img/icon/google-play-black.png" alt="">
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
